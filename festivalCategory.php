@@ -308,9 +308,9 @@ if (isset($_GET['catID'])) {
                             <?php endforeach ?>
                         </div>
                     </div>
+                </div>
             </form>
         </div>
-    </div>
     </div>
     <br><br><br>
     <?php include('footer.php'); 

@@ -23,6 +23,7 @@
     transform: translateY(-100%);
     transition: all 0.35s ease;
 }
+
 @keyframes dangtay {
     from {
         transform: rotateY(0deg);
@@ -33,6 +34,7 @@
         transform: translateX(100%);
     }
 }
+
 .header.active::before {
     transform: translateY(0);
 }
@@ -142,71 +144,76 @@
     border: inherit;
     flex-wrap: wrap;
 }
-.filter_text:hover{
+
+.filter_text:hover {
     text-decoration: none;
-    background-color:#0C1023;
+    background-color: #0C1023;
     color: #fff;
 }
 
-.list-festival{
+.list-festival {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.layout-item img{
+.layout-item img {
     width: 300px;
     height: 200px;
     border-radius: 10px;
-
 }
-.layout-item{
+
+.layout-item {
     height: 300px;
     margin-top: 40px;
 }
-.layout{
-    display: grid;
 
+.layout {
+    display: grid;
 }
-.layout-item{
+
+.layout-item {
     display: flex;
     text-decoration: none;
     list-style-type: none;
     text-align: center;
-    
-    
 }
-.layout-item div{
+
+.layout-item div {
     width: 100%;
-    
 }
-.layout-item b{
+
+.layout-item b {
     font-size: 22px;
 }
-.layout h1{
+
+.layout h1 {
     text-align: center;
     color: var(--sub-color);
 }
-.layout h2{
+
+.layout h2 {
     color: var(--sub-color);
     font-size: 35px;
     text-align: center;
 }
-.div1{
-    border-radius: 10px; 
+
+.div1 {
+    border-radius: 10px;
     background-color: var(--text-color);
-    
 }
-.div1 a{
+
+.div1 a {
     color: var(--bg-color);
-    
 }
-.allfes_p{
+
+.allfes_p {
     color: black;
     font-size: 20px;
     margin-bottom: 0px;
     font-weight: bold;
 }
+
 
 /* bộ lọc */
 
@@ -254,11 +261,12 @@
     padding: 16px;
     cursor: pointer;
     opacity: 0.9;
+    z-index: 2000;
 }
 
 .modal-close:hover {
     opacity: 1;
-    background-color: #757575;
+    background: linear-gradient(135deg, rgb(67, 203, 255) 10%, rgb(151, 8, 204) 100%);
 }
 
 .modal-body {
@@ -302,21 +310,27 @@
         transform: translateX(0%);
     }
 }
+
+
 /* FILTER */
-.filter-search{
+
+.filter-search {
     position: absolute;
     top: 14px;
     right: 16px;
 }
-.layout-item div:hover{
+
+.layout-item div:hover {
     background-color: rgb(210, 210, 210);
     animation: Inout 5s infinite;
 }
-@keyframes Inout{
-    0%,100%{
+
+@keyframes Inout {
+    0%,
+    100% {
         transform: scale(1);
     }
-    50%{
+    50% {
         transform: scale(1.1);
     }
-  } 
+}

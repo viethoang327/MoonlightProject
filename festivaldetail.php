@@ -175,7 +175,7 @@ if ($connect->query($sql_cat)) {
                                 <img src="admin/modules/gallerys/upload/<?php echo $row_r['imgLink'] ?>" alt="" width="100%">
                             </a>
                             <p>
-                            <h3><a class="btn btn-outline-info" href="festivaldetail?festID=<?php echo $row_r['festID'] ?>"><?php echo $row_r['festName'] ?></a></h3>
+                            <h3><a class="btn btn-outline-info" href="festivaldetail.php?festID=<?php echo $row_r['festID'] ?>"><?php echo $row_r['festName'] ?></a></h3>
                             </p>
                             <hr width="100%">
                             <br>

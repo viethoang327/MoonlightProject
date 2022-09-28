@@ -25,7 +25,7 @@
 							<div class="footer_blog_item clearfix">
 								
 								<div class="footer_blog_content">
-									<div class="footer_blog_title">leader:</div>
+									<div class="footer_blog_title">Leader:Nguyen The Hai Dang</div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
 								</div>
 							</div>
@@ -34,7 +34,7 @@
 							<div class="footer_blog_item clearfix">
 								
 								<div class="footer_blog_content">
-									<div class="footer_blog_title">Information : </div>
+									<div class="footer_blog_title">Information: Nguyen Hai Dang , Dang Thanh Nam </div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
 								</div>
 							</div>
@@ -43,7 +43,7 @@
 							<div class="footer_blog_item clearfix">
 								
 								<div class="footer_blog_content">
-									<div class="footer_blog_title">database</div>
+									<div class="footer_blog_title">Database: Nguyen Viet Hoang</div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
 								</div>
 							</div>

@@ -18,7 +18,7 @@ include('../../configs/closeDB.php');
  ?>
 <h1 class="title"> Festival Management</h1>
 <div class="container my-5">
-     <a class="btn btn-primary" href="insert.php"><i class="ti-plus"></i> Add</a>
+     <a class="btn btn-primary" href="insert.php">Add more festival</a>
      <div class="row" style="overflow-y: scroll; height:520px">
         <table class="table table-hover">
         <thead>

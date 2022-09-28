@@ -49,7 +49,7 @@ if($connect->query($sql_cat)){
     <link rel="stylesheet" type="text/css" href="fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
 </head>
 
 <body>
@@ -264,9 +264,10 @@ if($connect->query($sql_cat)){
                 <span>Close</span>
             </div>
             <form action="festival.php" method="GET">
-                <input type="submit" name="submit" value="Search" class="btn btn-primary btn-sm float-end mt-3 me-3">
                 <div class="modal-header">
-                    <div class="modal-body">
+                <input type="submit" name='submit' value="Search" class="btn btn-primary btn-sm filter-search">
+                </div>   
+                <div class="modal-body">
                         <div class="modal-month">
                             <label class="modal-label" for="">MONTH</label>
                             <div class="product-tool__color-items">
@@ -347,7 +348,6 @@ if($connect->query($sql_cat)){
                             </div>
                         </div>
                     </div>
-                </div>
             </form>
         </div>
     </div>
