@@ -1,0 +1,62 @@
+.detail-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail-font {
+    font-weight: bold;
+}
+
+.detail-information {
+    font-weight: bold;
+    text-align: center !important;
+    font-size: 30px !important;
+
+}
+
+.detail-size-image {
+    width: 700px;
+    height: 400px;
+}
+
+.comment {
+    background: #eee
+}
+
+.date {
+    font-size: 11px
+}
+
+.comment-text {
+    font-size: 12px
+}
+
+.fs-12 {
+    font-size: 12px
+}
+
+.shadow-none {
+    box-shadow: none
+}
+
+.name {
+    color: #007bff
+}
+
+.cursor:hover {
+    color: blue
+}
+
+.cursor {
+    cursor: pointer
+}
+
+.textarea {
+    resize: none
+}
+
+
+
+.name:focus-visible{
+    border:1px solid blue;
+}

@@ -1,0 +1,476 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --main-color: #191F3A;
+    --sub-color: #EAA023;
+    --text-color: #ffffff;
+    --bg-color: #0C1023;
+}
+
+
+
+#main {
+    background-image: linear-gradient(0deg, rgb(217, 175, 217) 0%, rgb(151, 217, 225) 100%);
+}
+
+
+/* .justify-content{
+    justify-content: space-between;
+}
+.container{
+    margin: auto;
+    max-width: 1200px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+/* HEADER */
+
+@keyframes dangtay {
+    from {
+        transform: rotateY(0deg);
+        transform: translateX(0%);
+    }
+    to {
+        transform: rotateY(360deg);
+        transform: translateX(100%);
+    }
+}
+
+.header {
+    background-color: transparent;
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    /* animation: dangtay 20s linear infinite; CHẠY CHỮ
+      */
+}
+
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgb(67, 203, 255) 10%, rgb(151, 8, 204) 100%);
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: all 0.35s ease;
+}
+
+.header.active::before {
+    transform: translateY(0);
+}
+
+.header .logo_container {
+    float: left;
+    padding: 0 21px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_container img {
+    width: 200px;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav>li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav>li:hover>a {
+    /* background-color: #ccc; */
+    background: linear-gradient(to right, #fa9e1b, #8d4fff);
+    color: black;
+}
+
+#nav li:hover {
+    transition: all .2s;
+}
+
+#nav li a {
+    color: antiquewhite;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0px 24px;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 180px;
+}
+
+#nav .subnav a {
+    color: #333;
+    padding: 0px 16px;
+}
+
+#nav .nav-arow {
+    font-size: 14px;
+}
+
+.search-box {
+    width: 70px;
+    height: 70px;
+    background-color: #242628;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    float: right;
+}
+
+.search-box.open {
+    width: 420px;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    color: #fff;
+    padding: 20px 100px 20px 35px;
+    font-size: 20px;
+}
+
+.search-btn {
+    color: #242628;
+    outline: none;
+    border: none;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+/* SLIDER */
+
+
+/* #slider{
+    position: relative;
+  
+    padding-top: 50% ;
+    background: url(/moonlight_event/image/pexels-wendy-wei-1190298.jpg) top center /cover no-repeat;
+    } */
+
+.text-content {
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    text-align: center; */
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.text-heading {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgb(0 0 0 / 80%) 7px 7px;
+    /* animation: backInDown 1.5s linear; */
+}
+
+.text-description {
+    text-shadow: 2px 2px black;
+    font-family: 'Beyond';
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-top: -34px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+    /* animation: backInUp 1.5s linear; */
+}
+
+#content .content-section {
+    max-width: 100%;
+    padding: 64px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.section-heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 4px;
+    /*khoảng cách giữa các ký tự */
+    color: var(--sub-color);
+}
+
+.section-sub-heading {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+    /* độ mờ */
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+.text {
+    text-align: left;
+}
+
+.swiper-heading {
+    margin-top: 15px;
+    font-size: 28px;
+    font-family: 'Beyond';
+}
+
+.swiper-search-heading {
+    float: left;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--sub-color);
+    ;
+    border-bottom: 2px solid var(--sub-color);
+}
+
+.swiper-search-heading:hover {
+    text-decoration: none;
+    color: aquamarine;
+    border-bottom: 2px solid aquamarine;
+}
+
+
+/* ABOUT */
+
+#about .about-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-item {
+    width: calc(100%/2);
+    padding: 15px;
+}
+
+#about .about-item h2 {
+    color: var(--text-color);
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#about .about-item p {
+    color: var(--text-color);
+    font-size: 18px;
+    margin: 15px 0 30px;
+}
+
+.about-item-img {
+    position: relative;
+}
+
+.about-item-img::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--sub-color);
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation: xoaytron 5s infinite;
+}
+
+@keyframes xoaytron {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.about-item-img span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+/* SLIDESHOW */
+
+
+/* html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    } */
+
+
+/* .swiper {
+    width: 100%;
+    height: 100%;
+} */
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    flex-direction: column;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    animation: zoomIn 1.5s linear;
+}
+
+.swiper-hidden {
+    overflow: hidden;
+}
+
+a.swiper-hidden {
+    display: block;
+}
+
+.swiper-slide:hover .swiper-img {
+    transform: scale(1.5);
+    transition: all .5s ease-out;
+    border-radius: 15px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.swiper-slide .swiper-img {
+    display: block;
+    width: 395px;
+    height: 340px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all .5s ease-out;
+    border-radius: 15px;
+}
+
+.swiper2 {
+    width: 100%;
+    height: 520px;
+}
+
+.swiper-slide {
+    background: url(moonlight_event/image/pexels-wendy-wei-1190298.jpg) top center /cover no-repeat;
+}
+
+
+/* .swiper-slide2{
+      background: url(moonlight_event/image/pexels-rick-han-3428289.jpg) top center /cover no-repeat;
+    }
+    .swiper-slide3{
+      background: url(moonlight_event/image/pexels-marcin-dampc-1684187.jpg) top center /cover no-repeat;
+    } */
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    padding-top: 113px;
+    padding-bottom: 104px;
+    background: linear-gradient(135deg, rgb(67, 203, 255) 10%, rgb(151, 8, 204) 100%);
+    display: block;
+    color: antiquewhite;
+}
+
+
+/* div {
+        display: block;
+        position: relative;
+    } */
+
+.footer_title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer_about_text,
+.footer_content {
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+.contact_info_icon {
+    padding: 10px;
+}
+
+.contact_info_item {
+    align-items: center;
+}

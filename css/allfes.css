@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --main-color: #191F3A;
+    --sub-color: #EAA023;
+    --text-color: #ffffff;
+    --bg-color: #0C1023;
+}
+
+body {
+    background-image: url(../image/phaohoa.jpg);
+    background-size: cover;
+}
+
+.title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--sub-color);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.content_food {
+    box-shadow: rgb(255 255 255 / 40%) 0px 0px 10px;
+    box-sizing: inherit;
+    margin-bottom: 10px;
+    box-sizing: inherit;
+    line-height: auto;
+    padding: 15px;
+    background-image: linear-gradient(0deg, rgb(217, 175, 217) 0%, rgb(151, 217, 225) 100%);
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.introduce h1 {
+    text-align: center;
+    color: var(--sub-color);
+    font-size: 30px;
+}
+
+.introduce p {
+    font-size: 22px;
+    margin-top: 25px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.bar {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 12px;
+    background-color: var(--c-1659337413527, #fff);
+    padding: 10px 20px;
+    margin: 0px 0px 20px;
+    display: block;
+    position: relative;
+}
+
+.bar::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bar .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+}
+
+.filter .filter_title {
+    height: auto;
+    width: auto;
+    color: var(--c-1659337655912, #292929);
+    font-size: 30px;
+    top: unset;
+    left: unset;
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 45px;
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+.filter_text {
+  
+    width: auto;
+    color: var(--c-1659337705967, #fff);
+    font-size: 16px;
+    font-family: 'Arima Madurai', cursive;
+    text-align: center;
+    padding: 8px 15px 6px;
+    top: unset;
+    left: unset;
+    height: auto;
+    background-color: var(--c-1659337460351, #be6f4c);
+    font-weight: 500;
+    transition: all 300ms ease;
+    display: inline-flex;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: inherit;
+    flex-wrap: wrap;
+}
+.filter_text:hover{
+    text-decoration: none;
+    background-color:#0C1023;
+    color: #fff;
+}
+
+.list-festival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.layout-item img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.layout-item{
+    height: 300px;
+    margin-top: 40px;
+}
+.layout{
+    display: grid;
+
+}
+.layout-item{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    
+    
+}
+.layout-item div{
+    width: 100%;
+    
+}
+.layout-item b{
+    font-size: 22px;
+}
+.layout h1{
+    text-align: center;
+    color: var(--sub-color);
+}
+.layout h2{
+    color: var(--sub-color);
+    font-size: 35px;
+    text-align: center;
+}
+.div1{
+    border-radius: 10px; 
+    background-color: var(--text-color);
+    
+}
+.div1 a{
+    color: var(--bg-color);
+    
+}
+
+
+/* chỉnh thẻ p */
+.allfes_p{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+/* tô màu cho thẻ a */
+.content a{
+    color:black;
+    
+    margin: 0 auto;
+}  
+.layout-item div:hover{
+    background-color: rgb(210, 210, 210);
+    animation: Inout 5s infinite;
+  
+}
+@keyframes Inout{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+  } 
+.pagination1{
+    text-align: center;
+    padding-top:30px ;
+}
+/* FILTER */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    display: none;
+    align-items: center;
+    justify-content: end;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+}
+
+.modal.open {
+    display: flex;
+    transform: translateX(0%);
+    height: 100%;
+    width: 300px;
+    right: 0;
+    left: unset;
+    background: linear-gradient(135deg, rgb(67, 203, 255) 10%, rgb(151, 8, 204) 100%);
+}
+
+.modal-container {
+    height: 100%;
+    width: 300px;
+    /* height: 100%; */
+    position: relative;  
+    animation: modalfacein ease 0.5s;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 30px; */
+    color: #fff;
+    padding: 28px;
+}
+
+.modal-close {
+    position: absolute;
+    left: 0%;
+    color: #fff;
+    padding: 16px;
+    cursor: pointer;
+    opacity: 0.9;
+    z-index: 2000;
+}
+
+.modal-close:hover {
+    opacity: 1;
+    background-color: #757575;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 600;
+    color: var(--c-1659337655912, #292929);
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 20px 0px 15px;
+}
+
+.modal-check {
+    height: 25px;
+    width: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    margin-right: 10px;
+}
+
+.modal-row label {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 500;
+    color: var(--c-1659337655912, #292929);
+    font-size: 16px;
+    margin: 0;
+}
+
+@keyframes modalfacein {
+    from {
+        opacity: 0;
+        /*trong suốt */
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+/* .page-link:hover{
+    background-color: rgb(255, 0, 0,0.6);
+} */

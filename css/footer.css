@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-shadow: rgb(0 0 0 / 1%) 0 0 1px;
+
+}
+footer{
+    width: 100%;
+    padding-top: 113px;
+    padding-bottom: 104px;
+    background: linear-gradient(135deg, rgb(67, 203, 255) 10%, rgb(151, 8, 204) 100%);
+    display: block;
+    color: antiquewhite;
+}
+/* div {
+    display: block;
+    position: relative;
+} */
+.footer_title{
+    font-weight: bold;
+    font-size: 24px;
+}
+.footer_about_text,.footer_content{
+    margin-top: 20px;
+}
+.contact_info_icon{
+    padding: 10px;
+}
+.contact_info_item{
+    align-items: center;
+}
+.contact_info_text{
+    text-decoration: none;
+    color: #fff;
+}

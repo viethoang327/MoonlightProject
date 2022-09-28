@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeSpeed;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.wrapper{
+    height: 100vh;
+    background: url('../img/Festival1.jpg')  top center / cover no-repeat;
+}
+
+.blur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: rgb(0, 0, 0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-card{
+    background-color: #fff;
+    width: 600px;
+    height: 500px;
+    max-width: calc(100% - 32px);
+    min-height:200px;
+    border-radius: 10px;
+    position: relative;
+}
+.card-item{
+    width: 290px;
+    height: 240px;
+    position: absolute;
+    border: none;
+    margin: 5px;
+    border-radius: 10px;
+}
+.card-item:hover{
+   background-color: rgb(0, 0, 0,0.9);
+}
+.card1{
+    top: 0;
+    left: 0;
+    background-color: #D61C4E;
+}
+.card2{
+    right: 0;
+    top: 0;
+    background-color: #1CD6CE;
+}
+.card3{
+    left: 0;
+    bottom: 0;
+    background-color: #FEDB39;
+}
+.card4{
+    right: 0;
+    bottom: 0;
+    background-color: #293462;
+}
+.icon-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    color: rgb(137 112 255);
+}
+.icon-card{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-10%);
+    font-size: 40px;
+}
+.control{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+.exit{
+    position: absolute;
+    top: 46px;
+    right: 0;
+}  
+
+ 
